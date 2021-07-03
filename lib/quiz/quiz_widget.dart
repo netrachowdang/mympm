@@ -23,6 +23,8 @@ class _QuizWidgetState extends State<QuizWidget> {
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: EdgeInsets.fromLTRB(0, 40, 0, 0),
@@ -102,43 +104,274 @@ class _QuizWidgetState extends State<QuizWidget> {
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Expanded(
-                    child: GridView(
-                      padding: EdgeInsets.zero,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,
-                        crossAxisSpacing: 10,
-                        mainAxisSpacing: 10,
-                        childAspectRatio: 1,
+                    child: Container(
+                      width: 100,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        color: Color(0xFFEEEEEE),
+                        shape: BoxShape.rectangle,
                       ),
-                      shrinkWrap: true,
-                      scrollDirection: Axis.vertical,
-                      children: [
-                        Card(
-                          clipBehavior: Clip.antiAliasWithSaveLayer,
-                          color: Color(0xFFF5F5F5),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                                child: Icon(
-                                  Icons.check_circle_rounded,
-                                  color: Colors.black,
-                                  size: 24,
+                      child: Card(
+                        clipBehavior: Clip.antiAliasWithSaveLayer,
+                        color: Color(0xFFF5F5F5),
+                        child: GridView(
+                          padding: EdgeInsets.zero,
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 6,
+                            crossAxisSpacing: 10,
+                            mainAxisSpacing: 10,
+                            childAspectRatio: 1,
+                          ),
+                          scrollDirection: Axis.vertical,
+                          children: [
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '1',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
                                 ),
                               ),
-                              Text(
-                                'Hello World',
-                                style: FlutterFlowTheme.bodyText1.override(
-                                  fontFamily: 'Poppins',
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
                                 ),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
+                                child: Text(
+                                  '2',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '3',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '4',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '5',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '1',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '1',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '1',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '1',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '1',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '1',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xFFF5F5F5),
+                              child: Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF0BB727),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Text(
+                                  '1',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.bodyText1.override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
                     ),
                   )
                 ],
