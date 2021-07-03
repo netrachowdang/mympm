@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "867654812188",
+    "project_id": "mylearning-4ac2a",
+    "storage_bucket": "mylearning-4ac2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867654812188:android:4cd0a914258b16694315d9",
+        "android_client_info": {
+          "package_name": "com.flutterflow.mylearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867654812188-v8smdl9jtarpgltcdnt3kfla6jkrlrb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHPCp3dkBY6cW-OXv27hOrhKRL72OTT3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867654812188-v8smdl9jtarpgltcdnt3kfla6jkrlrb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
